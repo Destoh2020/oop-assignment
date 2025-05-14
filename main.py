@@ -36,3 +36,34 @@ print(android.getDetails())
 print(iphone.getDetails())
 
 android.upgrade_storage(64)
+
+
+
+# Activity 2
+class vehicle:
+    def move(self):
+        pass
+
+# derive classes with unique implementation
+class car(vehicle):
+    def move(self):
+        print("Driving")
+
+class plane(vehicle):
+    def move(self):
+        print("Flying")
+
+class boat(vehicle):
+    def move(self):
+        print("sailing")
+
+class bicycle(vehicle):
+    def move(self):
+        print("Pedaling")
+
+# create a list vehicle objects
+Vehicle = [car(), plane(), boat(), bicycle()]
+
+#Call move() on each vehicle
+for v in Vehicle:
+    v.move()
